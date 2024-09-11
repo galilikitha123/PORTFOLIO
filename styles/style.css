@@ -1,0 +1,475 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.nav-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #008080;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.4em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #008080;
+}
+
+/* Profile Picture styles */
+.profile-pic img {
+    border-radius: 50%;
+    border: 5px solid #008080;
+    box-shadow: 0 0 20px #008080;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Home Section styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 45%;
+    margin-left: 130px;
+    padding: 20px;
+    text-align: left;
+    margin-top: -500px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro h3 {
+    font-size: 1.2em;
+    color: #008080;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1em;
+    color: #CCCCCC;
+    margin-bottom: 20px;
+}
+
+/* Profile Pic Adjustments */
+.profile-pic {
+    margin-top: 100px;
+    align-self: center;
+    flex-shrink: 0;
+}
+
+/* About Section styles */
+.about {
+    font-size: 1.2em;
+    color: #CCCCCC;
+    line-height: 1.5em;
+    max-width: 100%;
+}
+
+/* Contact Links styles */
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-links .icon {
+    margin: 0 10px;
+    font-size: 2em;
+    color: #008080;
+    text-shadow: 0 0 10px #008080;
+}
+
+.contact-links .icon:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 20px #008080;
+}
+
+/* Main Container styles */
+.main-container {
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* Section styles */
+section {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    width: 80%;
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #008080;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 10px #008080;
+}
+
+/* Experience Section styles */
+.experience-container {
+    margin-top: 30px;
+}
+
+.experience-item {
+    background-color: #0D0D0D;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.experience-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #008080;
+}
+
+.experience-item span {
+    font-size: 1.2em;
+    color: #CCCCCC;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.experience-item p {
+    font-size: 1.2em;
+    color: #CCCCCC;
+    margin-bottom: 15px;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience-item ul li {
+    font-size: 1em;
+    color: #CCCCCC;
+    margin-bottom: 10px;
+}
+
+/* Skill Container styles */
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.skill-box {
+    background-color: #0D0D0D;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    width: 48%;
+}
+
+.skill-box h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #008080;
+}
+
+.skill-box p {
+    font-size: 1.2em;
+    color: #CCCCCC;
+    line-height: 1.6em;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.skill-box {
+    background-color: #0D0D0D;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    width: 48%; /* Fixed width to ensure two per row */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.skill-box h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #008080;
+}
+
+.skill-box p {
+    font-size: 1.2em;
+    color: #CCCCCC;
+    line-height: 1.6em;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .skill-box {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+#projects {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    width: 80%;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    color: #008080;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 10px #008080;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.project-item {
+    background-color: #0D0D0D;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    width: 48%;
+    box-sizing: border-box;
+    border: 1px solid #008080;
+}
+
+.project-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #008080;
+}
+
+.project-item p {
+    font-size: 1.2em;
+    color: #CCCCCC;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+}
+
+.project-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.project-item ul li {
+    font-size: 1em;
+    color: #CCCCCC;
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tech-item {
+    background-color: #008080;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%;
+    }
+}
+
+
+
+
+/* ... (previous styles remain the same) ... */
+
+/* Updated Contact Section styles */
+#contact {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    width: 80%;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #008080;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 10px #008080;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.contact-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #008080;
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #008080;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #006666;
+    box-shadow: 0 0 10px #008080;
+}
+
+.contact-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #CCCCCC;
+}
+
+.info-item i {
+    margin-right: 10px;
+    color: #008080;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.social-links .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: #1A1A1A; /* Dark background color */
+    transition: all 0.3s ease;
+    background-color: #008080; /* Teal color for both icons */
+}
+
+.social-links .icon.linkedin {
+    background-color: #008080; /* Dark background for GitHub */
+    color: #eff3f3; /* Teal color for LinkedIn */
+}
+
+.social-links .icon.github {
+    background-color: #008080; /* Dark background for GitHub */
+    color: #eff3f3; /* Teal color for GitHub icon */
+}
+
+.social-links .icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 128, 128, 0.7);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+    
+    .contact-info {
+        margin-top: 30px;
+    }
+}
+
+/* ... (rest of the styles remain the same) ... */
+
+.info-item a {
+    color: #CCCCCC; /* Match the color of other text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.info-item a:hover {
+    color: #008080; /* Teal color on hover, matching your theme */
+}
